@@ -7,12 +7,12 @@ fn main() {
 struct Model {}
 
 fn model(app: &App) -> Model {
-    app.new_window().view(view).build().unwrap();
+    app.new_window().view(tulip).build().unwrap();
     Model {}
 }
 
 /* P.48 */
-fn view(app: &App, _model: &Model, frame: Frame) {
+fn tulip(app: &App, _model: &Model, frame: Frame) {
     // get canvas to draw on
     let draw = app.draw();
 
