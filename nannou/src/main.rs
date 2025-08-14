@@ -1,15 +1,15 @@
 use nannou::prelude::*;
 
-mod tulip;
+mod osaka;
 
 fn main() {
     nannou::app(model).run();
 }
 
 fn model(app: &App) {
-    app.new_window().size(512, 512).view(view).build().unwrap();
+    app.new_window().size(640, 640).view(view).build().unwrap();
 }
 
 fn view(app: &App, _model: &(), frame: Frame) {
-    tulip::tulip(app, frame);
+    osaka::osaka(app, frame);
 }

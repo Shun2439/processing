@@ -8,10 +8,6 @@ pub fn tulip(app: &App, frame: Frame) {
     draw.background().color(WHITE);
 
     /* petal */
-    let draw = app.draw();
-    draw.background().color(WHITE);
-
-    /* petal */
     draw.ellipse()
         .xy(vec2(160.0, -70.0))
         .wh(vec2(50.0, 80.0))
